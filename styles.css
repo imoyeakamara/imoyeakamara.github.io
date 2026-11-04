@@ -527,3 +527,20 @@ footer > a:last-child {
     scroll-behavior: auto;
   }
 }
+/* Sanctuary artwork across all pages */
+.art {
+  min-height: 0;
+  aspect-ratio: 9 / 16;
+  align-self: center;
+  background: url("images/images/akamara-sanctuary.png")
+    center / contain no-repeat;
+}
+
+.art > * {
+  display: none;
+}
+
+.art::before,
+.art::after {
+  content: none;
+}
